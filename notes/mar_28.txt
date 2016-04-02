@@ -1,0 +1,118 @@
+this course covers mathematical models and concepts for developing algorithms that can deal with some of the challenges posed by Big Data
+    web data
+    e-commerce
+    medical data - health care
+    bank transactions
+    social network
+    traffic, GPS
+    scientific experiments
+    ...
+    "data is the new (crude) oil for the economy"
+    look up In-Q-Tel
+
+    not just massive.. but complex
+        heterogeneous data
+        incomplete data
+        unstructured/semi-structured data
+        graph data
+        social network, semantic web
+        streaming data
+    not new
+        seismic data acquisition
+        census
+        wall st hedge funds (renaissance technologies)
+        governments
+        banks, insurances
+        scientific research
+
+
+
+
+goal: data --> information
+challenges:
+    capture
+    curation
+    stoarge
+    search
+    time-limitations
+    sharing
+    transfer
+    analysis
+    visualization
+data can be:
+    massive
+    non-static
+    multi-modal
+    incomplete
+    noisy
+    non-random
+    unstructured
+tasks:
+    discovery of useful (unexpected) patterns in data
+    non-trivial extraction of implicit previously unknown and potentially useful information from data
+    modeling (generative, predictive)
+    outliers (security threat, credit card theft)
+    clustering
+    classification
+    object recognition
+    visualiztion, dimension reduction
+    "data cleaning" (denoising, smoothing, grouping)
+    association rule mining (costumers who buy X often buy Y, etc.)
+    collaborative filterning: users collaborate in filtering information to find information of interest (amazon, netflix)
+
+"measure what you can measure, make measureable what you cannot measure"
+
+metadata analysis
+    idea is 100 yrs old (Karl Pearson)
+    ex:
+        see 3-part donahoe 50 years of data-science
+
+recent big data startups
+    Forensic Logic (crime analysis)
+    23andMe (genomics) <-- genome for $100?  yeah right.  they require permission to sell your data
+    ThetaRay (cybersecurity)
+    Ayasdi (topological data analysis)
+
+prereq for this course:
+    linear algebra
+    basic background in probability
+    basic experience in programming
+    basic knowledge in optimization recommended
+
+this class is NOT about
+    software development
+    database theory
+    specific applications
+    heuristic methods that lack mathematical foundations
+
+no reqd text.. maybe consider:
+    c bishop - pattern recognition and machine learning
+    f cucker, d x zho - learning theory - an approximation theory viewpoint
+    and mroe
+
+final project - either:
+    describe how some of the methods you learned in this course will be used in your research
+    find a practical application yourself using the methods you learnd in this course; describe how to use them; include numerical demonstrations
+    a report describing a thorough numerical comparison of existing algorithms related to one of the topics of this course to a specific application
+
+topic overview (tentative)
+    basics of concentration of measure and high dimensional probability (curses and blessings of high-dimensionality)
+        hypercube is a convex porcupine
+    linear dimension reduction - (fast) Johnson-Lindenstrauss - sketching
+    compressive sensing and sparsity
+        acquisition and compression simultaneously
+    matrix completion and low-rank modeling
+        generaliztion of compressinve sensing
+        most eigenvalues = 0 ... a form of sparsity
+    optimization for high-dim. data analysis: first order methods, stochastic gradient descent
+    fast randomized numerical lin. alg.
+    clustering: matrix perturbation theory, k-means, graph Laplacian, spectral clustering
+    diffusion maps, manifold learning, intrinsic geometry of data, nonlinear dimension reduction
+    some basics on deep learning
+        neural network with more than one layer
+
+last but not least
+    big data algorithsm are powerful
+    use the power responsibly and carefully
+
+    einstein: not everything that can be counted, counts.  And not everything that counts can be counted.
