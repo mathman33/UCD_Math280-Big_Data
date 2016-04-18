@@ -116,6 +116,45 @@
 
 \emph{Note: In your theorem you need to formalize what ``almost orthogonal'' means (what it means will come out of your proof ). You first need to select a probability distribution of your choice and apply an appropriate concentration inequality (but keep in mind that if e.g.~$x$ and $y$ are Gaussian random vectors, then the entries of the inner product $\VEC{x}{y}$ are no longer Gaussian).}}
 \begin{proof}
+    Let $a$ be a uniformly chosen random vector on the unit sphere in $\Rl^d$.  Now let $a$ be the first element of an orthonormal basis $\{a\}$ and extend this, via Gram-Schmidt, to an orthonormal basis of $\Rl^d$: $B = \{a, a_1, \dots, a_{d-1}\}$.  In polar coordinates,
+    \begin{align*}
+        a = \qty(1, \frac{\pi}{2}, \frac{\pi}{2}, \dots, \frac{\pi}{2}, \frac{\pi}{2})
+    \end{align*}
+    where the first entry is magnitude $\rho$, the last entry $\theta \in [0, 2\pi)$, and all other entries $\phi_i \in [0, \pi)$ for $i = 1, \dots, d-2$.  These coordinates are essentally a rotation such that $a$ is parallel with the positive $x$-axis.  In rectangular coordinates,
+    \begin{align*}
+        a = (0, 0, \dots, 0, 1)
+    \end{align*}
+    which represents the components of the basis $B$ of $\Rl^n$.  Now let $b$ be chosen uniformly at random on the unit sphere.  That is, $\norm{b} = 1$ and $\theta \in [0,2\pi)$ is chosen uniformly at random and $\phi_1, \dots, \phi_{d-2} \in [0, \pi)$ are each chosen uniformly at random.  $b$ can be represented in the polar coordinates as defined above as
+    \begin{align*}
+        b = \qty(1, \phi_1, \phi_2, \dots, \phi_{d-2}, \theta)
+    \end{align*}
+    and in rectangular coordinates as
+    \begin{align*}
+        b = \qty(b_1, b_2, \dots, b_d)
+    \end{align*}
+    where
+    \begin{align*}
+        b_1 &= \cos(\phi_1) \\
+        b_2 &= \sin(\phi_1)\cos(\phi_2) \\
+        b_3 &= \sin(\phi_1)\sin(\phi_2)\cos(\phi_3) \\
+        \vdots\ \ & \\
+        b_{d-2} &= \sin(\phi_1)\sin(\phi_2)\sin(\phi_3)\dots\sin(\phi_{d-3})\cos(\phi_{d-2})\\
+        b_{d-1} &= \sin(\phi_1)\sin(\phi_2)\sin(\phi_3)\dots\sin(\phi_{d-3})\sin(\phi_{d-2})\cos(\theta) \\
+        b_d &= \sin(\phi_1)\sin(\phi_2)\sin(\phi_3)\dots\sin(\phi_{d-3})\sin(\phi_{d-2})\sin(\theta)
+    \end{align*}
+    Then
+    \begin{align*}
+        \VEC{a}{b} = \VEC{(0, 0, \dots, 0, 1)}{\qty(b_1, b_2, \dots, b_d)} = b_d = \sin(\phi_1)\sin(\phi_2)\sin(\phi_3)\dots\sin(\phi_{d-3})\sin(\phi_{d-2})\sin(\theta).
+    \end{align*}
+    This is a product of $d-1$ numbers in $[-1,1]$.  Note that since $\phi_1, \dots, \phi_{d-2}$ are independent indentical random variables uniformly distributed in $[0,\pi)$, and since $\theta$ is uniformly distributed in $[0,2\pi)$ then
+    \begin{align*}
+        \mathbb{P}\qty(\abs{\sin(\phi_i)} > \frac{1}{2}) = \frac{2}{3} \qquad \text{and} \qquad \mathbb{P}\qty(\abs{\sin(\theta)} > \frac{1}{2}) = \frac{2}{3}
+    \end{align*}
+    Thus,
+    \begin{align*}
+        \mathbb{P}\qty(\VEC{a}{b} > \frac{1}{2^{d-1}}) = \mathbb{P}\qty(\abs{\sin(\theta)\prod_{i=1}^{d-2}\sin(\phi_{i})} > \frac{1}{2^{d-1}}) = \qty(\frac{2}{3})^{d-1} \rightarrow 0 \qquad \text{as } d \rightarrow \infty
+    \end{align*}
+    Thus two random vectors in high dimensions are most likely orthogonal.
 \end{proof}
 
 
@@ -155,6 +194,10 @@ Obviously we can do this for increasing dimension $d$.  What happens with the bl
 \end{figure}
 
 \begin{proof}
+    In a given orthant, the hypersphere of radius $\frac{1}{4}$ is always tangent to the hypercube of apothem size $\frac{1}{4}$.  However, the distance from each vertex of the hypercube of apothem size $\frac{1}{4}$ to the center that hypercube is $\frac{\sqrt{d}}{4}$.  The origin (center of the blue hypersphere) is a vertex of each orthant's hypercube, and thus the radius of the blue sphere is at most $\frac{1 - \sqrt{d}}{4}$.  A worse upper bound is the distance from the origin to the point at which two hyperspheres meet, which is $\frac{\sqrt{d-1}}{4}$.  Since two hyperspheres can only meet at one point, they must meet when the blue hypersphere has radius
+    \begin{align*}
+        r_{\text{blue hypersphere}} = \frac{1 - \sqrt{d}}{4}.
+    \end{align*}
 \end{proof}
 
 
@@ -190,10 +233,15 @@ will display the image. \\
 
 You can conveniently display multiple images if you want with the file {\tt showfaces.m}. \\
 
-We want to compare three dimension reduction methods by comparing how well distances between the differen images are preserved: (i) Johnson-Lindenstrauss projection, Fast Johnson Lindenstrauss projection and simple random sampling (i.e., randomly picking $k$ indices). \\
+We want to compare three dimension reduction methods by comparing how well distances between the different images are preserved: (i) Johnson-Lindenstrauss projection, Fast Johnson Lindenstrauss projection and simple random sampling (i.e., randomly picking $k$ indices). \\
 
 Choose different values for the reduced dimension $k$ and compare the dimension reduction ability of the three methods.  You need to think about how to devise such an experiment.  There are of course multiple options to do so.}
+
 \begin{proof}
+    I first used three 
+    \subsubsection*{Johnson-Lindenstrauss projection}
+    \subsubsection*{Fast Johnson-Lindenstrauss projection}
+    \subsubsection*{Simple random sampling}
 \end{proof}
 
 
