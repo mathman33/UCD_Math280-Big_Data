@@ -116,15 +116,15 @@
 
 \emph{Note: In your theorem you need to formalize what ``almost orthogonal'' means (what it means will come out of your proof ). You first need to select a probability distribution of your choice and apply an appropriate concentration inequality (but keep in mind that if e.g.~$x$ and $y$ are Gaussian random vectors, then the entries of the inner product $\VEC{x}{y}$ are no longer Gaussian).}}
 \begin{proof}
-    Let $a$ be a uniformly chosen random vector on the unit sphere in $\Rl^d$.  Now let $a$ be the first element of an orthonormal basis $\{a\}$ and extend this, via Gram-Schmidt, to an orthonormal basis of $\Rl^d$: $B = \{a, a_1, \dots, a_{d-1}\}$.  In polar coordinates,
+    Let $a$ be a uniformly chosen random vector on the unit sphere in $\Rl^d$.  Now let $a$ be the last element of an orthonormal basis $\{a_1, \dots, a_{d-1}, a\}$, extended via Gram-Schmidt.  In polar coordinates,
     \begin{align*}
         a = \qty(1, \frac{\pi}{2}, \frac{\pi}{2}, \dots, \frac{\pi}{2}, \frac{\pi}{2})
     \end{align*}
-    where the first entry is magnitude $\rho$, the last entry $\theta \in [0, 2\pi)$, and all other entries $\phi_i \in [0, \pi)$ for $i = 1, \dots, d-2$.  These coordinates are essentally a rotation such that $a$ is parallel with the positive $x$-axis.  In rectangular coordinates,
+    where the first entry is magnitude $\rho$, the last entry $\theta \in [0, 2\pi)$, and all other entries $\phi_i \in [0, \pi)$ for $i = 1, \dots, d-2$.  These coordinates are essentally a rotation such that $a$ is parallel with the positive $x_d$-axis.  In rectangular coordinates,
     \begin{align*}
-        a = (0, 0, \dots, 0, 1)
+        a = (0, 0, \dots, 0, 1).
     \end{align*}
-    which represents the components of the basis $B$ of $\Rl^n$.  Now let $b$ be chosen uniformly at random on the unit sphere.  That is, $\norm{b} = 1$ and $\theta \in [0,2\pi)$ is chosen uniformly at random and $\phi_1, \dots, \phi_{d-2} \in [0, \pi)$ are each chosen uniformly at random.  $b$ can be represented in the polar coordinates as defined above as
+    Now choose $b$ uniformly at random on the unit sphere.  That is, $\norm{b} = 1$ and $\theta \in [0,2\pi)$ is chosen uniformly at random and $\phi_1, \dots, \phi_{d-2} \in [0, \pi)$ are each chosen uniformly at random.  $b$ can be represented in the polar coordinates as defined above as
     \begin{align*}
         b = \qty(1, \phi_1, \phi_2, \dots, \phi_{d-2}, \theta)
     \end{align*}
@@ -154,7 +154,7 @@
     \begin{align*}
         \mathbb{P}\qty(\VEC{a}{b} > \frac{1}{2^{d-1}}) = \mathbb{P}\qty(\abs{\sin(\theta)\prod_{i=1}^{d-2}\sin(\phi_{i})} > \frac{1}{2^{d-1}}) = \qty(\frac{2}{3})^{d-1} \rightarrow 0 \qquad \text{as } d \rightarrow \infty
     \end{align*}
-    Thus two random vectors in high dimensions are most likely orthogonal.
+    Thus two random vectors in high dimensions are almost orthogonal.
 \end{proof}
 
 
@@ -194,10 +194,11 @@ Obviously we can do this for increasing dimension $d$.  What happens with the bl
 \end{figure}
 
 \begin{proof}
-    In a given orthant, the hypersphere of radius $\frac{1}{4}$ is always tangent to the hypercube of apothem size $\frac{1}{4}$.  However, the distance from each vertex of the hypercube of apothem size $\frac{1}{4}$ to the center that hypercube is $\frac{\sqrt{d}}{4}$.  The origin (center of the blue hypersphere) is a vertex of each orthant's hypercube, and thus the radius of the blue sphere is at most $\frac{1 - \sqrt{d}}{4}$.  A worse upper bound is the distance from the origin to the point at which two hyperspheres meet, which is $\frac{\sqrt{d-1}}{4}$.  Since two hyperspheres can only meet at one point, they must meet when the blue hypersphere has radius
+    In a given orthant, the hypersphere of radius $\frac{1}{4}$ is always tangent to the hypercube of apothem size $\frac{1}{4}$.  However, the distance from each vertex of the hypercube of apothem size $\frac{1}{4}$ to the center that hypercube is $\frac{\sqrt{d}}{4}$.  The origin (center of the blue hypersphere) is a vertex of each orthant's hypercube, and thus the radius of the blue sphere is at most $\frac{\sqrt{d} - 1}{4}$.  A worse upper bound is the distance from the origin to the point at which two hyperspheres meet, which is $\frac{\sqrt{d-1}}{4}$.  Since two hyperspheres can only meet at one point, and $\frac{\sqrt{d} - 1}{4} < \frac{\sqrt{d-1}}{4}$ for large $d$, they must meet when the blue hypersphere has radius $r_{\text{blue hypersphere}}$
     \begin{align*}
-        r_{\text{blue hypersphere}} = \frac{1 - \sqrt{d}}{4}.
+        r_{\text{blue hypersphere}} = \frac{\sqrt{d} - 1}{4}.
     \end{align*}
+    Since the distance from one vertex to another is $\frac{\sqrt{d-1}}{4}$, the blue hypersphere never extends beyond the hypercube.  The hypersphere grows as $d$ grows, but so does the hypercube - enough to completely contain the blue hypersphere.
 \end{proof}
 
 

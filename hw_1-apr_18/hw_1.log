@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 APR 2016 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 APR 2016 08:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2288,79 +2288,79 @@ File: figures/8spheres.png Graphic file (type png)
 <use figures/8spheres.png>
 Package pdftex.def Info: figures/8spheres.png used on input line 188.
 (pdftex.def)             Requested size: 113.81102pt x 115.47122pt.
-[3 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-apr_18/figures/
-4circles1.png> </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-apr
-_18/figures/8spheres.png>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 211--213
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 212--214
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
-
-Overfull \hbox (4.2835pt too wide) in paragraph at lines 213--214
+[3 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-apr_18/figures/
+4circles1.png> </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-apr
+_18/figures/8spheres.png>]
+Overfull \hbox (4.2835pt too wide) in paragraph at lines 214--215
 []\T1/futs/m/n/10 First note that $[] []\FML/futmi/m/it/10 A \FMS/futm/m/n/10 ^
 ^T \FML/futmi/m/it/10 k \FMS/futm/m/n/10 ‚ \FML/futmi/m/it/10 d$\T1/futs/m/n/10
  . Thus, by the Fun-da-men-tal The-o-rem of Lin-ear Al-ge-bra, $[] []\FML/futmi
 /m/it/10 A \FMS/futm/m/n/10 ^^U
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 238.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 239.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 238--239
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 239--240
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
 (/Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-apr_18/hw_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `hw_1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
  35524 strings out of 493089
  800124 string characters out of 6134842
- 974468 words of memory out of 5000000
+ 973467 words of memory out of 5000000
  38397 multiletter control sequences out of 15000+600000
  99289 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2376,7 +2376,7 @@ ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 -dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
 Output written on /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_1-a
-pr_18/hw_1.pdf (4 pages, 185733 bytes).
+pr_18/hw_1.pdf (4 pages, 185559 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
