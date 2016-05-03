@@ -151,6 +151,46 @@ Using the null space property, show that $\ell_1$-minimization will recover any 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \problem{Problem 2}{On the connection between (in)coherence parameter $\mu$ and restricted isometry constant $\delta_s$: Show that $\delta_1 = 0$, $\delta_2 = \mu$, and $\delta_s \leq (s-1)\mu$.}
 \begin{proof}
+    Let $A \in \Rl^{k \times d}$ where each column is normalized, i.e.~$\norm{A_j}_2 = 1$ for each $j = 1, 2, \dots, d$.  Let $x$ be a $1$-sparse vector of norm $1$, that is, $\abs{x_k} = 1$ for some $k \in \{1, 2, \dots, d\}$ and $x_\ell = 0$ for $\ell \in \{1, 2, \dots, d\}\setminus \{k\}$.  Then $Ax = x_kA_k$, where $A_k$ denotes the $k$\textsuperscript{th} column of $A$.  Since each column is normalized,
+    \begin{align*}
+        \norm{Ax}_2^2 = \norm{A_j}_2^2 = 1 = \norm{x}_2^2
+    \end{align*}
+    Since this holds for all $1$-sparse vector, $\delta_1 = 0$.
+
+    Now set $x$ be a $2$-sparse vector of norm $1$, that is $\abs{x_{k_1}}^2 + \abs{x_{k_2}}^2 = 1$ for some $k_1, k_2 \in \{1, 2, \dots, d\}$ and $x_\ell = 0$ for $\ell \in \{1, 2, \dots, d\}\setminus\{x_{k_1}, x_{k_2}\}$.  Then $Ax = x_{k_1}A_{k_1} + x_{k_2}A_{k_2}$.  Thus,
+    \begin{align*}
+        \norm{Ax}_2^2 = \norm{x_{k_1}A_{k_1} + x_{k_2}A_{k_2}}_2^2 &= \norm{x_{k_1}A_{k_1}}_2^2 + 2\VEC{x_{k_1}A_{k_1}}{x_{k_2}A_{k_2}}_2 + \norm{x_{k_2}A_{k_2}}_2^2 \\
+        &= \abs{x_{k_1}}^2\cancelto{1}{\norm{A_{k_1}}_2^2} + 2x_{k_1}x_{k_2}\VEC{A_{k_1}}{A_{k_2}}_2 + \abs{x_{k_2}}^2\cancelto{1}{\norm{A_{k_2}}_2^2} \\
+        &= \cancelto{1}{\abs{x_{k_1}}^2 + \abs{x_{k_2}}^2} + 2x_{k_1}x_{k_2}\VEC{A_{k_1}}{A_{k_2}}_2 \\
+        &\leq 1 + \VEC{A_{k_1}}{A_{k_2}}_2
+    \end{align*}
+    since $\displaystyle\max_{\abs{a}^2 + \abs{b}^2 = 1}\qty[ab] = \frac{1}{2}$.  Then since $\abs{\VEC{A_{k_1}}{A_{k_2}}} < \mu$,
+    \begin{align*}
+        \qty(1 - \mu)\norm{x}_2^2 = 1 - \mu \leq \norm{Ax}_2^2 \leq 1 + \mu = \qty(1 + \mu)\norm{x}_2^2.
+    \end{align*}
+    Since this holds for all $2$-sparse vectors, $\delta_2 \leq \mu$.  Since we can choose a $2$-sparse vectors such that $x_{k_1} = x_{k_2} = \frac{\sqrt{2}}{2}$, then $\delta_2 = \mu$.
+
+    To show $\delta_s = \qty(s - 1)\mu$, first note, as our base case, that $\delta_2 = (2 - 1)\mu$.  Then assume $\delta_s = (s - 1)\mu$.  It suffices to show $\delta_{s+1} = ((s + 1) - 1)\mu$, and then we will conclude, by induction that this holds for all integers $s$.  Also note that the following calculations only make sense for $s \leq d$.  Let $x$ be an $s+1$-sparse vector of norm $1$, that is $\abs{x_{k_1}}^2 + \dots + \abs{x_{k_s}}^2 + \abs{x_{k_{s+1}}}^2 = 1$ for some $k_1, \dots, k_s, k_{s+1} \in \{1, 2, \dots, d\}$ and $x_\ell = 0$ for $\ell \in \{1, 2, \dots, d\}\setminus \{k_1, \dots, k_s, k_{s+1}\}$.  Then $Ax = \displaystyle\sum_{i=1}^{s+1} x_{k_i}A_{k_i}$, and thus
+    \begin{align*}
+        \norm{Ax}_2^2 = \norm{\sum_{i=1}^{s+1} x_{k_i}A_{k_i}}_2^2 &= \norm{\sum_{i=1}^{s} \qty[x_{k_i}A_{k_i}] + x_{k_{s+1}}A_{k_{s+1}}}_2^2 \\
+        &= \norm{\sum_{i=1}^{s} x_{k_i}A_{k_i}}_2^2 + 2\VEC{\sum_{i=1}^{s} x_{k_i}A_{k_i}}{x_{k_{s+1}}A_{k_{s+1}}}_2 + \norm{x_{k_{s+1}}A_{k_{s+1}}}_2^2 \\
+        % &\leq \sum_{i=1}^{s+1}\qty(\abs{x_{k_i}}^2\norm{A_{k_i}}_2^2) + 2\sum_{i=1}^s\qty(\VEC{x_{k_i}A_{k_i}}{x_{k_{s+1}}A_{k_{s+1}}})
+        &= \norm{\sum_{i=1}^{s} x_{k_i}A_{k_i}}_2^2 + 2\sum_{i=1}^s\qty(\VEC{x_{k_i}A_{k_i}}{x_{k_{s+1}}A_{k_{s+1}}}_2) + \abs{x_{k_{s+1}}}^2\cancelto{1}{\norm{A_{k_{s+1}}}_2^2} \\
+        &= \norm{\sum_{i=1}^{s} x_{k_i}A_{k_i}}_2^2 + 2\sum_{i=1}^s x_{k_i}x_{k_{s+1}}\qty(\VEC{A_{k_i}}{A_{k_{s+1}}}_2) + \abs{x_{k_{s+1}}}^2
+    \end{align*}
+    Since $\sum_{i=1}^{s} x_{k_i}A_{k_i} = A\hat{x}$ for some $s$-sparse vector $\hat{x}$, then by the induction hypothesis,
+    \begin{align*}
+        \qty(1 - (s - 1)\mu)\norm{\hat{x}}_2^2 \leq \norm{A\hat{x}}_2^2 \leq \qty(1 + (s - 1)\mu)\norm{\hat{x}}_2^2
+    \end{align*}
+    Since $\norm{\hat{x}}_2^2 \leq \norm{x}_2^2$, then $\norm{\hat{x}} \leq 1$, and thus
+    \begin{align*}
+        \qty(1 - (s - 1)\mu) \leq \norm{\sum_{i=1}^s x_{k_i}A_{k_i}}_2^2 \leq \qty(1 + (s - 1)\mu)
+    \end{align*}
+    Since $\displaystyle\max_{\sum_{i=1}^{s+1}\abs{a_i}^2 = 1}\qty[\sum_{i=1}^{s+1} \qty[a_i a_{s+1}]] = 1$ (which occurs when $a_i = \frac{\sqrt{s+1}}{s+1}$ for $i = 1, \dots, s+1$), and since $\abs{\VEC{A_{k_i}}{A_{k_{s+1}}}_2} \leq \mu$, then
+    \begin{align*}
+        \qty(1 - s\mu)\norm{x}_2^2 = 1 - s\mu = 1 - (s - 1)\mu - \mu \leq \norm{Ax}_2^2 \leq 1 + (s-1)\mu + \mu = 1 + s\mu = \qty(1 + s\mu)\norm{x}_2^2
+    \end{align*}
+    Since this holds for arbitrary $(s+1)$-sparse vectors, then $\delta_{s+1} \leq s\mu$.  However, we can choose $x$ such that $\norm{Ax}_2^2 = \qty(1 + s\mu)\norm{x}_2^2$ by choosing $x_{k_i} = \frac{\sqrt{s+1}}{s+1}$ for $i = 1, 2, \dots, s+1$.  Then $\delta_{s+1} = s\mu$.  By induction $\delta_s = (s - 1)\mu$ for all integers $s$ ($\leq d$).
 \end{proof}
     
 
@@ -163,6 +203,11 @@ Using the null space property, show that $\ell_1$-minimization will recover any 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \problem{Problem 3}{Let $A = \Rl^{k\times d}$ be a Gaussian random matrix.  Given an estimate for the coherence $\mu$ of $A$.}
 \begin{proof}
+    The following surface was generated by taking the coherence of matrices for each value of $k$ and $d$ between $20$ and $1000$, in intervals of $20$.  In particular, for each $k$ and $d$, the average coherence value over $10$ Gaussian random matrices of size $k\times d$ was calculated.
+    \begin{figure}[ht!]
+        \includegraphics[width=\textwidth]{problem_3.png}
+    \end{figure}
+    The figure shows that coherence, in general, increases as the dimension decreases, and as the number of vectors increases.  This is intuitive since, as we saw from Homework 1 Problem 1, as the dimension decreases and/or the number of vectors increases, the probability that two vectors are close to orthogonal decreases.  Equivalently, the probability that two vectors are close to parallel increases.  If a matrix has two parallel columns, the coherence is $1$.
 \end{proof}
     
 

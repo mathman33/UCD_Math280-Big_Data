@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 MAY 2016 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2239,66 +2239,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
+[2]
+Overfull \hbox (10.00272pt too wide) in paragraph at lines 188--190
+\T1/futs/m/n/10 Since $[] [] \FMS/futm/m/n/10 Å \T1/futs/m/n/10 1$ (which oc-cu
+rs when $\FML/futmi/m/it/10 a[] \FMS/futm/m/n/10 Å []$ \T1/futs/m/n/10 for $\FM
+L/futmi/m/it/10 i \FMS/futm/m/n/10 Å \T1/futs/m/n/10 1\FML/futmi/m/it/10 ; [] ;
+ s \FMS/futm/m/n/10 Ä \T1/futs/m/n/10 1$), and since $[] \FMS/futm/m/n/10 ^^T
+ []
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 164--166
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 204--206
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
+<problem_3.png, id=49, 578.16pt x 433.62pt>
+File: problem_3.png Graphic file (type png)
+<use problem_3.png>
+Package pdftex.def Info: problem_3.png used on input line 208.
+(pdftex.def)             Requested size: 433.62001pt x 325.2142pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 180--182
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 225--227
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
-<normally_distributed.png, id=39, 578.16pt x 433.62pt>
+[3] <normally_distributed.png, id=55, 578.16pt x 433.62pt>
 File: normally_distributed.png Graphic file (type png)
 <use normally_distributed.png>
-Package pdftex.def Info: normally_distributed.png used on input line 185.
+Package pdftex.def Info: normally_distributed.png used on input line 230.
 (pdftex.def)             Requested size: 433.62001pt x 325.2142pt.
-[2]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 202--204
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 247--249
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
-<normally_distributed_nonnegative.png, id=50, 578.16pt x 433.62pt>
+[4 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/problem_
+3.png>] <normally_distributed_nonnegative.png, id=61, 578.16pt x 433.62pt>
 File: normally_distributed_nonnegative.png Graphic file (type png)
 <use normally_distributed_nonnegative.png>
 Package pdftex.def Info: normally_distributed_nonnegative.png used on input lin
-e 207.
+e 252.
 (pdftex.def)             Requested size: 433.62001pt x 325.2142pt.
-[3 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally
+[5 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally
 _distributed.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-[4 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+[6 </Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally
 _distributed_nonnegative.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
 (/Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/hw_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `hw_2.out' has not changed.
 (rerunfilecheck)             Checksum: AB1BBD3B1EFD461C9F7475483C3F79C7;225.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 34433 strings out of 493089
- 779769 string characters out of 6134842
- 949660 words of memory out of 5000000
- 37322 multiletter control sequences out of 15000+600000
- 99935 words of font info for 105 fonts, out of 8000000 for 9000
+ 34442 strings out of 493089
+ 779886 string characters out of 6134842
+ 955660 words of memory out of 5000000
+ 37326 multiletter control sequences out of 15000+600000
+ 100352 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,83p,10469b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2306,14 +2320,15 @@ exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-m
-ay_02/hw_2.pdf (4 pages, 366646 bytes).
+ay_02/hw_2.pdf (6 pages, 693827 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

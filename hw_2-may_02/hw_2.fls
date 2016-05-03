@@ -1,4 +1,4 @@
-PWD /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02
+PWD /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -410,9 +410,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futrc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
-INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
-INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
-INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
@@ -442,6 +439,15 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/problem_3.png
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/problem_3.png
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/problem_3.png
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
+INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed.png
 INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed_nonnegative.png
 INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed_nonnegative.png
 INPUT /Users/samuelfleischer/School/UCD/UCD_Math280-Big_Data/hw_2-may_02/normally_distributed_nonnegative.png
@@ -453,6 +459,7 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-bb.p
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
