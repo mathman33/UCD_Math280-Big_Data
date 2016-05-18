@@ -1,0 +1,13 @@
+L = get_laplacian(get_adjacency(x));
+[V, D, W] = eig(L);
+v2 = V(:, 2);
+f = figure;
+for i = 1:200
+if v2(i) > 0
+plot(x(1,i), x(2,i), '.'); hold on;
+elseif v2(i) <= 0
+plot(x(1,i), x(2,i), 'c.'); hold on;
+end
+end
+print(f, '-dpng', '3.png', '-r300');
+diary off
